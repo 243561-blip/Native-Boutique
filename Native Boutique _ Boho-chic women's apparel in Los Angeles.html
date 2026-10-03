@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Native Boutique | Boho-chic women's apparel in Los Angeles</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Figtree:wght@400;500;600&display=swap">
+<style>
+:root{--bg:#FFF9F5;--ink:#3A2F45;--indigo:#6F5086;--gold:#E3A02F;--rose:#D9A5A0;--sage:#9FB08E;--card:#FFFFFF;--line:#E6DED5;--on-indigo:#FBF8F4;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*,*:before,*:after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 Figtree,system-ui,sans-serif}
+h1,h2,h3{font-family:Fraunces,Georgia,serif;font-weight:600;line-height:1.1;margin:0}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:10;background:var(--bg);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:60px;gap:12px}
+.logo{font-family:Fraunces,serif;font-size:1.3rem;font-weight:600;text-decoration:none}
+nav{display:flex;gap:20px;align-items:center}
+nav a{text-decoration:none;font-size:.95rem}
+nav a:hover{color:var(--gold)}
+.btn{background:var(--gold);color:#2B2236;border:0;border-radius:999px;padding:11px 22px;font:600 .95rem Figtree,sans-serif;cursor:pointer;text-decoration:none;display:inline-block}
+.btn.alt{background:transparent;border:2px solid currentColor;color:inherit}
+@media(max-width:640px){nav a.hide{display:none}}
+.hero{background:linear-gradient(135deg,#F9DCD6,#FBEFC9);color:var(--ink);position:relative;overflow:hidden}
+.hero .wrap{padding-top:56px;padding-bottom:56px;display:grid;grid-template-columns:1.1fr .9fr;gap:30px;align-items:center}.art{width:100%;height:auto;display:block}@media(max-width:760px){.hero .wrap{grid-template-columns:1fr}.hero .art{max-width:300px;margin:0 auto}}
+.hero h1{font-size:clamp(3rem,11vw,7.5rem);letter-spacing:-.03em;max-width:9ch}
+.hero p{max-width:46ch;font-size:1.15rem;margin:22px 0 28px;opacity:.9}
+.hero .row{display:flex;gap:12px;flex-wrap:wrap}
+.weave{height:34px;background:repeating-linear-gradient(90deg,var(--gold) 0 28px,var(--rose) 28px 56px,var(--sage) 56px 84px,var(--indigo) 84px 112px);}
+.weave.thin{height:12px}
+section{padding:68px 0}
+h2{font-size:clamp(1.9rem,5vw,3rem);margin-bottom:12px}
+.lead{max-width:56ch;opacity:.85;margin:0 0 30px}
+.filters{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:24px}
+.chip{border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:999px;padding:8px 16px;font:500 .9rem Figtree,sans-serif;cursor:pointer}
+.chip[aria-pressed="true"]{background:var(--indigo);color:var(--on-indigo);border-color:var(--indigo)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:20px}
+.item{background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden;display:flex;flex-direction:column}
+.ico{position:absolute;left:50%;top:42%;width:56%;transform:translate(-50%,-50%)}.pic{position:relative;aspect-ratio:4/5;display:flex;align-items:flex-end;padding:12px;font-family:Fraunces,serif;font-size:1.1rem;color:#2B2236}
+.item .body{padding:14px 16px 16px;display:flex;flex-direction:column;gap:6px;flex:1}
+.item h3{font-size:1.1rem}
+.item small{opacity:.7}
+.item .foot{margin-top:auto;display:flex;justify-content:space-between;align-items:center;padding-top:8px}
+.price{font-weight:600}
+.add{background:var(--indigo);color:var(--on-indigo);border:0;border-radius:999px;padding:8px 16px;font:600 .85rem Figtree,sans-serif;cursor:pointer}
+.about{display:grid;grid-template-columns:1.2fr 1fr;gap:40px;align-items:center}
+@media(max-width:760px){.about{grid-template-columns:1fr}}
+.facts{display:grid;gap:14px}
+.fact{border-left:6px solid var(--gold);padding:4px 0 4px 16px}
+.fact:nth-child(2){border-color:var(--rose)}.fact:nth-child(3){border-color:var(--sage)}
+.fact b{display:block;font-family:Fraunces,serif;font-size:1.25rem}
+.reviews{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}
+blockquote{margin:0;padding:20px;background:var(--card);border:1px solid var(--line);border-radius:14px}
+blockquote footer{position:static;border:0;background:none;font-size:.85rem;opacity:.7;margin-top:10px}
+.score{font-family:Fraunces,serif;font-size:3rem}
+.visit{background:#E3EADB;color:var(--ink)}
+.visit .cols{display:grid;grid-template-columns:1fr 1fr;gap:40px}
+@media(max-width:760px){.visit .cols{grid-template-columns:1fr}}
+.visit a{color:#6F5086;font-weight:600}
+form{display:grid;gap:12px}
+label{font-size:.9rem;font-weight:500}
+input,textarea{width:100%;padding:12px;border-radius:10px;border:1px solid var(--line);font:inherit;background:#FBF8F4;color:#2B2236}
+.msg{min-height:1.4em;font-weight:600;color:#6F5086}
+footer.site{padding:26px 0;text-align:center;font-size:.85rem;opacity:.75;position:static}
+.drawer{position:fixed;top:0;right:0;height:100%;width:min(380px,100%);background:var(--card);border-left:1px solid var(--line);z-index:30;transform:translateX(100%);transition:transform .25s;display:flex;flex-direction:column;padding:20px;padding-top:calc(20px + env(safe-area-inset-top,0px));padding-bottom:calc(20px + env(safe-area-inset-bottom,0px))}
+.drawer.open{transform:none}
+.drawer ul{list-style:none;margin:16px 0;padding:0;overflow:auto;flex:1}
+.drawer li{display:flex;justify-content:space-between;gap:8px;padding:10px 0;border-bottom:1px solid var(--line);align-items:center}
+.qty button{width:28px;height:28px;border-radius:50%;border:1px solid var(--line);background:var(--bg);color:var(--ink);cursor:pointer}
+.empty{opacity:.7}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<header><div class="wrap nav">
+<a class="logo" href="#top">Native Boutique</a>
+<nav><a class="hide" href="#shop">Shop</a><a class="hide" href="#about">Our story</a><a class="hide" href="#reviews">Reviews</a><a class="hide" href="#visit">Visit</a>
+<button class="btn" id="cartBtn" aria-controls="drawer">Bag (<span id="count">0</span>)</button></nav>
+</div></header>
+
+<main id="top">
+<div class="hero">
+<div class="wrap"><div>
+<h1>Native Boutique</h1>
+<p>Contemporary and boho-chic women's clothing, jewelry and accessories from independent labels. Find your next favorite dress in Los Angeles.</p>
+<div class="row"><a class="btn" href="#shop">Shop the collection</a><a class="btn alt" href="#visit">Plan a visit</a></div>
+</div><svg class="art" viewBox="0 0 360 420" role="img" aria-label="A dress hanging in an arched shop window"><path d="M30 420V180a150 150 0 0 1 300 0v240z" fill="#FFF9F5" stroke="#6F5086" stroke-width="4"/><circle cx="180" cy="170" r="80" fill="#F3D28C"/><circle cx="180" cy="170" r="56" fill="#E3A02F" opacity=".35"/><path d="M180 126v-14M180 126l-48 18h96z" fill="none" stroke="#3A2F45" stroke-width="4" stroke-linejoin="round"/><path d="M160 146h40l-4 46 42 158H122l42-158z" fill="#D9A5A0"/><rect x="161" y="190" width="38" height="8" fill="#6F5086"/><g fill="#9FB08E"><ellipse cx="62" cy="372" rx="14" ry="38" transform="rotate(-20 62 372)"/><ellipse cx="90" cy="380" rx="12" ry="32" transform="rotate(15 90 380)"/><ellipse cx="298" cy="372" rx="14" ry="38" transform="rotate(20 298 372)"/><ellipse cx="270" cy="380" rx="12" ry="32" transform="rotate(-15 270 380)"/></g><rect x="30" y="396" width="300" height="24" fill="#E6DED5"/></svg></div></div>
+<div class="weave" aria-hidden="true"></div>
+
+<section id="shop"><div class="wrap">
+<h2>Shop the collection</h2>
+<p class="lead">Dresses in every color, handmade jewelry, accessories, and a section for kids. Add pieces to your bag and we'll hold them for you in store.</p>
+<div class="filters" id="filters" role="group" aria-label="Filter by category"></div>
+<div class="grid" id="grid"></div>
+</div></section>
+<div class="weave thin" aria-hidden="true"></div>
+
+<section id="about"><div class="wrap about">
+<div><h2>Style advice from the owner, not a script</h2>
+<p class="lead">Native Boutique is a neighborhood shop that carries independent labels you won't find in a mall. Shoppers say the staff helps them try pieces they would normally pass over, and the sale section is always worth a look.</p>
+<a class="btn" href="#visit">Come say hello</a></div>
+<div><svg class="art" style="max-width:420px;margin-bottom:22px" viewBox="0 0 360 200" role="img" aria-label="A rack of colorful dresses"><defs><path id="dr" d="M80 62h20l-2 20 18 90H64l18-90z"/></defs><path d="M30 40h300M30 40v150M330 40v150M90 40v22M180 40v22M270 40v22" stroke="#6F5086" stroke-width="5" fill="none" stroke-linecap="round"/><use href="#dr" fill="#E3A02F"/><use href="#dr" x="90" fill="#9FB08E"/><use href="#dr" x="180" fill="#D9A5A0"/><rect x="20" y="186" width="320" height="8" fill="#E6DED5"/></svg><div class="facts">
+<div class="fact"><b>Independent labels</b>Apparel, jewelry and accessories chosen piece by piece.</div>
+<div class="fact"><b>Dresses in every color</b>Fall dresses, everyday dresses, and standout occasion pieces.</div>
+<div class="fact"><b>Something for kids</b>A small section for the little ones in your life.</div>
+</div></div></div></section>
+
+<section id="reviews" style="padding-top:0"><div class="wrap">
+<h2>Loved by the neighborhood</h2>
+<p class="lead"><span class="score">4.9</span> out of 5 across 59 Google reviews.</p>
+<svg class="art" style="max-width:600px;margin:0 0 24px" viewBox="0 0 600 50" aria-hidden="true"><defs><pattern id="lf" width="60" height="50" patternUnits="userSpaceOnUse"><ellipse cx="15" cy="25" rx="6" ry="14" fill="#9FB08E" transform="rotate(-30 15 25)"/><ellipse cx="30" cy="25" rx="6" ry="14" fill="#9FB08E" transform="rotate(30 30 25)"/><circle cx="45" cy="25" r="7" fill="#E3A02F"/></pattern></defs><rect width="600" height="50" fill="url(#lf)"/></svg><div class="reviews">
+<blockquote>This place is a gem, really good service.<footer>Google review</footer></blockquote>
+<blockquote>Their dress selection is amazing in every color and variety.<footer>Google review</footer></blockquote>
+<blockquote>Selection, quality and prices work for me.<footer>Google review</footer></blockquote>
+</div></div></section>
+
+<section class="visit" id="visit"><div class="wrap cols">
+<div><h2>Visit the shop</h2>
+<p class="lead">2036 Colorado Blvd<br>Los Angeles, CA 90041</p>
+<p>Opens at 12 PM<br><a href="tel:+13232562036">+1 323-256-2036</a></p>
+<p><a href="https://www.google.com/maps/search/?api=1&amp;query=Native+Boutique+2036+Colorado+Blvd+Los+Angeles" target="_blank" rel="noopener">Get directions</a></p><svg class="art" style="max-width:380px;margin-top:22px" viewBox="0 0 360 240" role="img" aria-label="Illustration of the Native Boutique storefront"><defs><pattern id="aw" width="80" height="34" patternUnits="userSpaceOnUse"><rect width="40" height="34" fill="#E3A02F"/><rect x="40" width="40" height="34" fill="#F9DCD6"/></pattern></defs><rect x="20" y="40" width="320" height="190" rx="6" fill="#FFF9F5"/><rect x="90" y="10" width="180" height="42" rx="6" fill="#6F5086"/><text x="180" y="39" text-anchor="middle" font-family="Fraunces,Georgia,serif" font-size="22" fill="#FFF9F5">Native</text><rect x="20" y="58" width="320" height="34" fill="url(#aw)"/><rect x="40" y="108" width="140" height="100" fill="#FBEFC9" stroke="#6F5086" stroke-width="3"/><path d="M96 118h16l-3 22 14 62H85l14-62z" fill="#D9A5A0"/><path d="M146 126h12l-2 16 10 46h-40l10-46z" fill="#9FB08E"/><rect x="214" y="108" width="100" height="122" fill="#F3D28C" stroke="#6F5086" stroke-width="3"/><circle cx="298" cy="172" r="4" fill="#6F5086"/><rect x="0" y="228" width="360" height="12" fill="#C9D4BD"/></svg></div>
+<form id="contact" novalidate>
+<h2 style="font-size:1.6rem">Ask us anything</h2>
+<div><label for="n">Name</label><input id="n" required></div>
+<div><label for="e">Email</label><input id="e" type="email" required></div>
+<div><label for="m">Message</label><textarea id="m" rows="3" required></textarea></div>
+<button class="btn" type="submit">Send message</button>
+<div class="msg" id="fmsg" role="status"></div>
+</form>
+</div></section>
+</main>
+<footer class="site wrap">&copy; Native Boutique. Demo design: product names and prices are placeholders.</footer>
+
+<aside class="drawer" id="drawer" aria-label="Shopping bag">
+<div style="display:flex;justify-content:space-between;align-items:center"><h2 style="font-size:1.5rem;margin:0">Your bag</h2><button class="chip" id="close">Close</button></div>
+<ul id="lines"></ul>
+<div style="display:flex;justify-content:space-between;font-weight:600"><span>Total</span><span id="total">$0</span></div>
+<button class="btn" id="hold" style="margin-top:14px">Hold in store</button>
+<div class="msg" id="cmsg" role="status"></div>
+</aside>
+
+<script>
+var P=[
+{id:1,n:"Marigold wrap dress",c:"Dresses",p:78,g:"linear-gradient(160deg,#E3A02F,#F3D28C)"},
+{id:2,n:"Sage tiered maxi",c:"Dresses",p:92,g:"linear-gradient(160deg,#9FB08E,#D5E0C8)"},
+{id:3,n:"Indigo block-print dress",c:"Dresses",p:85,g:"linear-gradient(160deg,#2E2440,#6D5C8F)"},
+{id:4,n:"Rosewood fall dress",c:"Dresses",p:88,g:"linear-gradient(160deg,#D9A5A0,#F0D3CF)"},
+{id:5,n:"Handmade beaded earrings",c:"Jewelry",p:28,g:"linear-gradient(160deg,#F3D28C,#D9A5A0)"},
+{id:6,n:"Layered stone necklace",c:"Jewelry",p:42,g:"linear-gradient(160deg,#9FB08E,#F3D28C)"},
+{id:7,n:"Woven market tote",c:"Accessories",p:55,g:"linear-gradient(160deg,#C9B79C,#EADFCB)"},
+{id:8,n:"Embroidered scarf",c:"Accessories",p:34,g:"linear-gradient(160deg,#D9A5A0,#9FB08E)"},
+{id:9,n:"Little wanderer set",c:"Kids",p:38,g:"linear-gradient(160deg,#F3D28C,#9FB08E)"}];
+var cats=["All"].concat(P.map(function(x){return x.c}).filter(function(v,i,a){return a.indexOf(v)===i}));
+var cur="All",bag={};
+function $(i){return document.getElementById(i)}
+function renderFilters(){$("filters").innerHTML=cats.map(function(c){return '<button class="chip" aria-pressed="'+(c===cur)+'" data-c="'+c+'">'+c+'</button>'}).join("")}
+var IC={Dresses:'<path d="M40 12h20l-3 24 20 52H23l20-52z"/>',Jewelry:'<path d="M22 18c0 42 56 42 56 0" fill="none" stroke="#fff" stroke-width="5"/><circle cx="50" cy="66" r="10"/>',Accessories:'<path d="M24 40h52l-5 46H29z"/><path d="M38 40c0-22 24-22 24 0" fill="none" stroke="#fff" stroke-width="5"/>',Kids:'<path d="M50 14l9 20 22 2-16 15 5 22-20-12-20 12 5-22-16-15 22-2z"/>'};
+function icon(c){return '<svg class="ico" viewBox="0 0 100 100" aria-hidden="true" fill="#fff" fill-opacity=".75">'+IC[c]+'</svg>'}
+function renderGrid(){$("grid").innerHTML=P.filter(function(x){return cur==="All"||x.c===cur}).map(function(x){
+return '<article class="item"><div class="pic" style="background:'+x.g+'" role="img" aria-label="'+x.n+' placeholder">'+icon(x.c)+x.c+'</div><div class="body"><h3>'+x.n+'</h3><small>Independent label</small><div class="foot"><span class="price">$'+x.p+'</span><button class="add" data-id="'+x.id+'">Add to bag</button></div></div></article>'}).join("")}
+function renderBag(){var ids=Object.keys(bag),t=0,n=0;
+$("lines").innerHTML=ids.length?ids.map(function(id){var x=P.filter(function(p){return p.id==id})[0],q=bag[id];t+=x.p*q;n+=q;
+return '<li><span>'+x.n+'<br><small>$'+x.p+'</small></span><span class="qty"><button data-m="'+id+'" aria-label="Remove one">-</button> '+q+' <button data-a="'+id+'" aria-label="Add one">+</button></span></li>'}).join(""):'<li class="empty">Your bag is empty. Add a piece from the collection.</li>';
+$("total").textContent="$"+t;$("count").textContent=n}
+document.addEventListener("click",function(e){var t=e.target;
+if(t.dataset.c){cur=t.dataset.c;renderFilters();renderGrid()}
+if(t.classList.contains("add")){bag[t.dataset.id]=(bag[t.dataset.id]||0)+1;renderBag();$("cmsg").textContent="";$("drawer").classList.add("open")}
+if(t.dataset.a){bag[t.dataset.a]++;renderBag()}
+if(t.dataset.m){if(--bag[t.dataset.m]<1)delete bag[t.dataset.m];renderBag()}});
+$("cartBtn").onclick=function(){$("drawer").classList.add("open")};
+$("close").onclick=function(){$("drawer").classList.remove("open")};
+$("hold").onclick=function(){if(!Object.keys(bag).length){$("cmsg").textContent="Add at least one piece to hold it.";return}
+bag={};renderBag();$("cmsg").textContent="Held for you in store. Ask for it at the counter."};
+$("contact").onsubmit=function(e){e.preventDefault();var ok=$("n").value&&/\S+@\S+\.\S+/.test($("e").value)&&$("m").value;
+$("fmsg").textContent=ok?"Message sent. We'll reply by email soon.":"Enter your name, a valid email and a message.";if(ok)this.reset()};
+renderFilters();renderGrid();renderBag();
+</script>
+</body>
+</html>
